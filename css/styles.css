@@ -25,6 +25,9 @@ ul {
   list-style: none;
 }
 /* Шапка Навигация */
+.page-header {
+  color: var(--primary-bg-color);
+}
 .logo {
   text-decoration: none;
   color: #2196f3;
