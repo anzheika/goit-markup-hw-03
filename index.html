@@ -41,14 +41,14 @@
     <main>
       <!--<Баннер и кнопка для заказа услуги-->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button-text button">Заказать услугу</button>
         </div>
       </section>
 
       <!--Наши преймущества-->
-      <section class="our-advantages container">
+      <section class="our-advantages section">
         <div class="container">
           <h2 class="visually-hidden">Наши преймущества</h2>
           <ul class="our-advantages-list">
@@ -79,61 +79,72 @@
       </section>
 
       <!--Род деятельности-->
-      <section>
-        <h2 class="whatdowedo">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="images/img.jpg" width="370" alt="A person typying on the laptop" />
-          </li>
-          <li>
-            <img src="images/img2.jpg" width="370" alt="A preson looking up the phone" />
-          </li>
-          <li>
-            <img src="images/img3.jpg" width="370" alt="A tablet with a picture" />
-          </li>
-        </ul>
+      <section class="whatdowedo section">
+        <div class="container container-whatdowedo">
+          <h2 class="whatdowedo-title">Чем мы занимаемся</h2>
+          <ul class="whatdowedo-list">
+            <li class="whatdowedo-list-item">
+              <img src="images/img.jpg" width="370" alt="A person typying on the laptop" />
+            </li>
+            <li class="whatdowedo-list-item">
+              <img src="images/img2.jpg" width="370" alt="A preson looking up the phone" />
+            </li>
+            <li class="whatdowedo-list-item">
+              <img src="images/img3.jpg" width="370" alt="A tablet with a picture" />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Члены команды-->
-      <section>
-        <h2 class="">Наша команда</h2>
-        <ul class="our-team">
-          <li>
-            <img src="images/productdesigner.jpg" width="270" alt="Team member product designer" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product designer</p>
-          </li>
-          <li>
-            <img
-              src="images/frontenddeveloper.jpg"
-              width="270"
-              alt="Team member Frontend developer"
-            />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
-            <img src="images/marketing.jpg" width="270" alt="Team member for marketing" />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="images/uidesigner.jpg" width="270" alt="Team member ui designer" />
-            <h3>Михаил Ермаков</h3>
-            <p>UI designer</p>
-          </li>
-        </ul>
+      <section class="our-team section">
+        <div class="container">
+          <h2 class="our-team-title">Наша команда</h2>
+          <ul class="our-team">
+            <li>
+              <img
+                src="images/productdesigner.jpg"
+                width="270"
+                alt="Team member product designer"
+              />
+              <h3>Игорь Демьяненко</h3>
+              <p>Product designer</p>
+            </li>
+            <li>
+              <img
+                src="images/frontenddeveloper.jpg"
+                width="270"
+                alt="Team member Frontend developer"
+              />
+              <h3>Ольга Репина</h3>
+              <p>Frontend Developer</p>
+            </li>
+            <li>
+              <img src="images/marketing.jpg" width="270" alt="Team member for marketing" />
+              <h3>Николай Тарасов</h3>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img src="images/uidesigner.jpg" width="270" alt="Team member ui designer" />
+              <h3>Михаил Ермаков</h3>
+              <p>UI designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!--Подвал страницы-->
-    <footer>
-      <a href="/" class="logo">Web<span class="logostudiofooter">Studio</span></a>
-      <address class="address">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:info@example.com">info@example.com</a> <br />
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
-      </address>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="/" class="logoweb">Web<span class="logostudiofooter">Studio</span></a>
+        <address class="address">
+          <p class="address-name">г. Киев, пр-т Леси Украинки, 26</p>
+
+          <a class="address-mail" href="mailto:info@example.com">info@example.com</a> <br />
+          <a class="address-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

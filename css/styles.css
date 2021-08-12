@@ -83,6 +83,10 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -94,6 +98,7 @@ ul {
 .page-header {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -143,7 +148,7 @@ ul {
 
 /* Баннер */
 
-.hero {
+.hero-container {
   background-color: #2f303a;
   display: flex;
   align-items: center;
@@ -165,8 +170,11 @@ ul {
 .button {
   display: block;
   margin: 0 auto;
+}
+.button {
+  border-radius: 4px;
+  padding: 10px 32px;
   box-sizing: border-box;
-  margin: 0 auto;
   width: 200px;
   height: 50px;
   text-align: center;
@@ -202,7 +210,6 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -218,16 +225,20 @@ ul {
 .our-advantages-list {
   display: flex;
   align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .advantages-list-item {
-  max-width: 270px;
-  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .advantages-list-item:last-child {
   margin-right: 0;
 }
 
-.our-advantages-list h3 {
+.advantages-title {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -242,13 +253,35 @@ ul {
   color: var(--primary-text-color);
 }
 /* Род деятельности */
-h2 {
+.whatdowedo-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+.whatdowedo-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 
+.whatdowedo-list {
+  display: flex;
+}
+.whatdowedo-list-item {
+  width: calc((100% - 60px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* ЧЛЕНЫ КОМАНДЫ */
+.our-team-title {
+  color: #212121;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 0.82px;
+}
 .our-team h3 {
   font-weight: 500;
   font-size: 16px;
@@ -288,12 +321,13 @@ h2 {
   line-height: 35, 96px;
   letter-spacing: 0.03em;
 }
-footer {
+.footer {
   background-color: #2f303a;
   font-style: normal;
 }
-
-.address p {
+.footer-container {
+}
+.address-name {
   color: white;
   font-style: normal;
   font-weight: normal;
@@ -301,7 +335,8 @@ footer {
   line-height: 1.71;
 }
 
-.address a {
+.address-mail,
+.address-tel {
   text-decoration: none;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
