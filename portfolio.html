@@ -16,101 +16,144 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--Шапка сайта-->
     <header class="page-header">
-      <!-- Напка сайта, навигаций по сайту основная -->
-      <nav>
-        <a href="/" class="logo">Web<span class="logostudio">Studio</span></a>
-        <ul class="nav-header">
-          <li><a href="./index.html" class="nav-list">Студия</a></li>
-          <li><a href="" class="nav-list current">Портфолио</a></li>
-          <li><a href="" class="nav-list">Контакты</a></li>
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="/" class="logoweb">Web<span class="logostudio">Studio</span></a>
+          <ul class="nav-header">
+            <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link current">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-container">
+          <li class="nav-item-mail">
+            <a href="mailto:info@devstudio.com" class="nav-email">info@devstudio.com</a>
+          </li>
+          <li class="nav-item-tel">
+            <a href="tel:+380991111111" class="nav-number">+38 099 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-
-      <ul class="nav-contact">
-        <li><a href="mailto:info@devstudio.com" class="nav-email">info@devstudio.com</a></li>
-        <li><a href="tel:+380991111111" class="nav-number">+38 099 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Фильтр на странице Портфолио -->
-      <section class="work-examples">
-        <h1>Примеры работ</h1>
-        <ul>
-          <li><button type="button" class="button-text-examples">Все</button></li>
-          <li><button type="button" class="button-text-examples">Веб-сайты</button></li>
-          <li><button type="button" class="button-text-examples">Приложения</button></li>
-          <li><button type="button" class="button-text-examples">Дизайн</button></li>
-          <li><button type="button" class="button-text-examples">Маркетинг</button></li>
-        </ul>
-        <!-- Примеры работ линия 1 -->
-        <ul>
-          <li>
-            <img src="images/websiteexample.jpg" width="370" alt="An example of the website" />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="images/designexample.jpg"
-              width="370"
-              alt="A poster with basketball players"
-            />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
-          </li>
-          <li>
-            <img src="images/appexample.jpg" width="370" alt="Seafood restaurant app logo" />
-            <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
-          </li>
-        </ul>
-        <!-- Примеры работ линия 2 -->
-        <ul>
-          <li>
-            <img src="images/marketingexample.jpg" width="370" alt="A set of headphones" />
-            <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
-          </li>
-          <li>
-            <img src="images/appboxes.jpg" width="370" alt="Two boxes" />
-            <h2>Проект Boxes</h2>
-            <p>Приложение</p>
-          </li>
-          <li>
-            <img src="images/websiteinspation.jpg" width="370" alt="A screen" />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
-          </li>
-        </ul>
-        <!-- Примеры работ линия 3 -->
-        <ul>
-          <li>
-            <img src="images/limitededition.jpg" width="370" alt="An unfolded magazine" />
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
-          </li>
-          <li>
-            <img src="images/projectlab.jpg" width="370" alt="A Lab tag" />
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
-          </li>
-          <li>
-            <img src="images/growingbusiness.jpg" width="370" alt="A laptop" />
-            <h2>Growing Business</h2>
-            <p>Приложение</p>
-          </li>
-        </ul>
+      <section class="work-examples section">
+        <div class="container">
+          <div class="">
+            <h1 class="visually-hidden">Примеры работ</h1>
+            <ul class="work-examples-container button-items-list">
+              <li class="button-examples-item">
+                <button type="button" class="button-text-examples button-all">Все</button>
+              </li>
+              <li class="button-examples-item">
+                <button type="button button-web" class="button-text-examples">Веб-сайты</button>
+              </li>
+              <li class="button-examples-item">
+                <button type="button" class="button-text-examples button-apps">Приложения</button>
+              </li>
+              <li class="button-examples-item">
+                <button type="button" class="button-text-examples button-design">Дизайн</button>
+              </li>
+              <li class="button-examples-item">
+                <button type="button" class="button-text-examples button-marketing">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Примеры работ линия 1 -->
+          <ul class="work-examples-one">
+            <li class="work-examples-list-item">
+              <img src="images/websiteexample.jpg" width="370" alt="An example of the website" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Технокряк</h2>
+                <p class="work-example-type-one">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="work-examples-list-item">
+              <img
+                src="images/designexample.jpg"
+                width="370"
+                alt="A poster with basketball players"
+              />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Постер New Orlean vs Golden Star</h2>
+                <p class="work-example-type-one">Дизайн</p>
+              </div>
+            </li>
+            <li class="work-examples-list-item">
+              <img src="images/appexample.jpg" width="370" alt="Seafood restaurant app logo" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Ресторан Seafood</h2>
+                <p class="work-example-type-one">Приложение</p>
+              </div>
+            </li>
+          </ul>
+          <!-- Примеры работ линия 2 -->
+          <ul class="work-examples-two">
+            <li class="work-examples-list-item">
+              <img src="images/marketingexample.jpg" width="370" alt="A set of headphones" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Проект Prime</h2>
+                <p class="work-example-type-two">Маркетинг</p>
+              </div>
+            </li>
+            <li class="work-examples-list-item">
+              <img src="images/appboxes.jpg" width="370" alt="Two boxes" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Проект Boxes</h2>
+                <p class="work-example-type-two">Приложение</p>
+              </div>
+            </li>
+            <li class="work-examples-list-item">
+              <img src="images/websiteinspation.jpg" width="370" alt="A screen" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Inspiration has no Borders</h2>
+                <p class="work-example-type-two">Веб-сайт</p>
+              </div>
+            </li>
+          </ul>
+          <!-- Примеры работ линия 3 -->
+          <ul class="work-examples-three">
+            <li class="work-examples-list-item not">
+              <img src="images/limitededition.jpg" width="370" alt="An unfolded magazine" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Издание Limited Edition</h2>
+                <p class="work-example-type">Дизайн</p>
+              </div>
+            </li>
+            <li class="work-examples-list-item not">
+              <img src="images/projectlab.jpg" width="370" alt="A Lab tag" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Проект LAB</h2>
+                <p class="work-example-type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="work-examples-list-item not">
+              <img src="images/growingbusiness.jpg" width="370" alt="A laptop" />
+              <div class="work-examples-content">
+                <h2 class="work-example-title">Growing Business</h2>
+                <p class="work-example-type">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Подвал страницы-->
-    <footer>
-      <a href="/" class="logo">Web<span class="logostudiofooter">Studio</span></a>
-      <address class="address">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:info@example.com">info@example.com</a> <br />
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <a href="/" class="logoweb-footer">Web<span class="logostudiofooter">Studio</span></a>
+        <address class="address">
+          <p class="address-name">г. Киев, пр-т Леси Украинки, 26</p>
+          <a class="address-mail link" href="mailto:info@example.com">info@example.com</a>
+          <a class="address-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
