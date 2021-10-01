@@ -16,6 +16,9 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
 ul,
 ol {
   padding-left: 0;
@@ -32,8 +35,13 @@ ol {
   display: block;
 }
 
+link {
+  display: block;
+}
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Цвет основного текста: #212121
 Вторичный цвет  #757575 
@@ -77,6 +85,8 @@ ul {
   letter-spacing: 0.03em;
   text-align: left;
   margin-right: 95px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logostudio {
@@ -110,6 +120,7 @@ ul {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: #212121;
 }
 .header-container {
   width: 1200px;
@@ -123,8 +134,9 @@ ul {
 .nav-container {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
-.nav-header a {
+.nav-item {
   text-decoration: none;
   color: var(--title-text-color);
   font-weight: 500;
@@ -147,6 +159,8 @@ ul {
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-item-mail {
   margin-right: 50px;
@@ -164,8 +178,9 @@ ul {
 /*======= НАЧАЛО БАННЕРА НА ГЛАВНОЙ СТРАНИЦЕ ==========*/
 .hero {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  display: flex;
+  height: 600px;
+  align-items: center;
 }
 .hero-container {
   background-color: #2f303a;
@@ -188,21 +203,28 @@ ul {
   display: block;
   margin: 0 auto;
 }
-.button {
+.hero-button {
   border-radius: 4px;
   padding: 10px 32px;
   box-sizing: border-box;
   width: 200px;
   height: 50px;
   text-align: center;
+  border: none;
 }
+.hero-button:focus,
+.hero-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .button,
 .button-text {
   font-family: inherit;
   color: white;
   background-color: var(--accent-color);
+  font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  letter-spacing: 0.06em;
   line-height: 1.8;
   cursor: pointer;
 }
@@ -236,7 +258,7 @@ ul {
   margin-top: -30px;
 }
 .advantages-list-item {
-  width: calc((100% - 90px) / 4);
+  width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -284,7 +306,7 @@ ul {
   margin-top: -30px;
 }
 .whatdowedo-list-item {
-  width: calc((100% - 60px) / 3);
+  width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -365,16 +387,27 @@ ul {
 /*  =======РАЗДЕЛ НАША КОМАНДА КОНЕЦ (НА ГЛАВНОЙ СТРАНИЦЕ)======== */
 
 /* -=========ФИЛЬТР НА СТРАНИЦЕ ПОРТФОЛИО НАЧАЛО =========*/
-.work-examples .button-text-examples {
+
+.work-examples-button {
+  border: none;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  color: #212121;
+}
+
+.button-text-examples {
+  border: none;
   font-family: inherit;
   background-color: #f5f4fa;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
 }
-.work-examples .button-text-examples:hover {
+.button-text-examples:hover,
+.button-text-examples:focus {
   background-color: var(--accent-color);
   color: white;
 }
@@ -486,7 +519,6 @@ button {
   list-style: none;
 }
 .address-name {
-  max-width: 232px;
   color: white;
   font-style: normal;
   font-weight: normal;
@@ -495,18 +527,14 @@ button {
   margin-bottom: 10px;
 }
 
-.address-mail,
-.address-tel {
-  display: block;
-}
 .logoweb-footer {
   display: block;
 }
-.address-mail {
+.footer-link {
   margin-bottom: 10px;
 }
-.address-mail,
-.address-tel {
+.footer-link {
+  display: block;
   text-decoration: none;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -514,5 +542,10 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 /* =======КОНЕЦ ФУТЕРА======== */
